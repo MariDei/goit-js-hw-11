@@ -75,15 +75,40 @@ button[data-search]:focus {
   column-gap: 24px;
 }
 
-.gallery-image {
-  max-width: 100%;
-  max-height: 100%;
+.gallery-item {
+  border: 1px solid #808080;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.gallery-image:hover,
-.gallery-image:focus {
+.gallery-item:hover,
+.gallery-item:focus {
   transform: scale(1.04);
+}
+
+.gallery-image {
+  width: 360px;
+  height: 152px;
+}
+
+.image-info {
+  padding: 4px 16px;
+  width: 360px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 16px;
+}
+
+.item-info {
+  font-weight: 600;
+  line-height: 1.33333;
+  font-size: 12px;
+  text-align: center;
+}
+
+.item-info span {
+  font-weight: 400;
+  line-height: 2;
 }
 
 /* Loader */
